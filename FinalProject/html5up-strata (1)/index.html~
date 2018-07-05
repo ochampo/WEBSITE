@@ -1,0 +1,667 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CS220 Final Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+	<header id="header">
+	<a href="#" class="main.jpg"><img src="main.jpg" alt="" /></a>
+	<h1><strong>My Name is Daniel</strong>, this is a simple site for CS220 <br />
+	 Hope you guys enjoy!!<br />
+	crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+	</header>
+
+		<!-- Main -->
+	
+	<div id="main">
+	<section id="one">
+	<header class="major">
+	<h2> The history of Javascript<br /></h2>
+	</header>
+	<p>
+	<ul>	
+	<li> Created by Netscape ( Brendan Eich)</li>
+	<li>The original name was Mocha</li>
+ 	<li>Developed in 10 days (May 1995) </li>
+	<li> Was created for web Development</li>
+	</ul>
+	</p>
+	
+	<h2 class = "major">About Javascript<br /></h2>
+
+	
+	<ul>					
+		<li>High Level</li>					
+  		<li>Dyanmic</li>
+ 	         <li>Untyped interpreted programming</li>
+		<li>First class functions</li>
+                  <li>Derived from java </li>
+                  <li>loosely typed language</li>
+                        				
+		<li> Example (please Note that there was a for loop.) </li>
+	</ul>					
+         				<p>	var Myarray = ["Dan", "hello", "me", 1, false] </p>
+ <script>
+
+  var Myarray = ["Dan", "hello", "me", 1, false ] 
+  document.write("<br>")
+  for( var i = 0 ;i < 5; i ++ ) 
+  document.write(Myarray[i]+"<br>")
+
+</script>
+	<h2>Looping structure in JavaScript and condtional statments</h2>
+				<ul>
+						<li>While Loops </li>
+                        				<li>Do While loops </li>
+                         				<li>For loops </li>
+			             		<li>if Statments </li>
+                         				<li>Switch statments   </li>
+						 <li> Nested For loop big O N square </li>
+        				</ul>
+
+<script>
+
+
+for( var j =0; j<10; j++)
+{
+	document.write( " ")
+for ( var i = 0 ; i<j; i++)
+{
+		document.write("*");
+}
+
+document.write("<br>");
+
+}
+
+
+
+
+document.write( "this is the while loop and do while loop nested" ); 
+ i =11;
+ j = 1;
+ document.write("<br>");
+
+ do{
+	 document.write( " *");
+     i= i-1;
+
+while(j<i)
+  {
+	  document.write( " <br> * " );
+	  j++;
+
+  }
+	 
+ }while( i > 0)
+
+
+
+
+</script>
+                            
+					
+				
+<section id="one">
+<header class="major">
+<h2>Lexical structure<br /></h2>
+</header>
+<li>Case Sensitivity</li>
+<li>Comments</li>
+<li>Literals</li>
+<li>Optional Semicolons</li>
+<h2>Left-associative<br/></h2>
+<ol>
+<li>Direction it is evaluated in</li>	  					 			
+<li>precedence </li>   
+<li> Example</li>
+</ol>		
+
+				
+<p>var i = 1, j = ++i; // i and j are both 2, <br />
+
+var i = 1, j = i++; // i is 2, j is 1 </p>
+ <script>
+     var  i = 1, j = ++i
+document.write(" This came from JavaScript ++i = " + j);
+document.write("<br>"); 
+var i  = 1, j = i++
+ document.write(" This came from JavaScript i++ = " + j)
+	 
+	 </script>
+	 	<h2>Functions in JavaScript<br /></h2>
+						</header>
+						<p><li> Inputs </li>
+                            <li>return statments </li>
+							<li> regular declaration  </li>
+						 <p>Example: that returns a simple math probleam<p>
+						 <script >
+var Math = function (number) {
+    return  val = number * 10;
+    
+};
+
+// Badly written function with syntax errors!
+
+ var greeting = function(name)
+{
+    var myname = name;
+	document.write(myname);
+ };
+ 
+ 
+ 
+ 
+ document.write(Math(10)+"<br>");
+ greeting("Daniel");
+
+
+</script>
+
+
+
+
+
+
+
+	<h2>Inherintance<br /></h2>
+						</header>
+						<p><li>prototypal inheritance</li>
+                            <li>code reuse.</li>
+							<li>cloning existing objects </li>
+			             <li> no classes</li>
+						 <p>Example of an object<p>
+						 
+						 <script>
+var object1 = new Object();
+object1.car = "doge";
+
+var object2 =  new Object();
+object2.car = "chevy";
+var object3 =  new Object();
+object3.car = "chevy";
+
+document.write(object1.car);
+ 
+
+  </script>
+
+       
+						 </p>
+
+	<h2>An intresting code<br /></h2>
+	<p> which way do you wanna go buddy?<p>
+	<p> please note that this for if and switch case statments<p>
+<p>
+<button type="button" onclick="light(1)">Left</button>
+<button type="button" onclick="light(0)">Right</button>
+</p>
+<script>
+
+function light(sw) {
+
+if (sw == 0) {
+
+var troll = prompt("You chose right, man that word is deciving! Now you have to fight the dragon! What you gonna do? Fight,RUN, or Hire someone?").toUpperCase()
+
+switch(troll) {
+  case 'FIGHT':
+	  var strong = prompt("Dam bro you are gonna fight. Good Luck! I'm not gonna fight, too tired from eating dragon eggs. Wait, do you even lift bro? ").toUpperCase()
+    var smart = prompt("Do you know how to use a gun bro??").toUpperCase()
+    if(strong === 'YES' || smart === 'YES') {
+      bro = prompt("Dam bro, you killed it, you gonna clean that up?").toUpperCase();
+	if (bro === 'NO')
+		alert(" Dam bro that is part of the job");
+	else if(bro === 'YES')
+		alert(" Thanks Man ummm push over ummm " );
+	
+
+    } else {
+      alert("Dam bro their is a reason no one ever fights a dragon, thanks for the distraction I got more Dragon eggs!");
+    }
+    break;
+  case 'HIRE':
+    var Hire = prompt("Dam bro their is only one guy that I know that will fight a Dragon, his name is Sherk. You have any gold on you to pay him? ").toUpperCase();
+    var dollars = prompt("will you have gold later on so that  I can take it to him?").toUpperCase();
+    if(Hire === 'YES' && dollars === 'YES') {
+      alert("Great! Shrek comes and kills the the dragon. Smart move, or was it......");
+    } else {
+      alert("Dang it! it was just a ruse for my gold");
+    }
+    break;
+  case 'RUN':
+    var fast = prompt("Dude you can't run the door is locked, don't even bother checking! Maybe you can run past him and get to the other door. He will chase you down. Are you a fast person? ").toUpperCase();
+    var headStart = prompt("Are you ready to die?").toUpperCase();
+    if(fast === 'YES' || headStart === 'YES') {
+      alert("Don't forget about me!!!.");
+    } else {
+      alert("Thanks for the distraction, Dragon eggs are the best.");
+    }
+    break;
+  default:
+    alert("I didn't understand your choice. Hit Run and try again, this time picking FIGHT, PAY, or RUN!");
+}
+}
+
+else if( sw == 1)
+	alert(" How did you know? Oh, nevermind go aways!" );
+
+}
+
+</SCRIPT>
+
+
+
+
+
+</section>
+
+
+
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Random kittens</h2>
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="p1.jpg" class="image fit thumb"><img src="p1.jpg" alt="" /></a>
+								<h3>This one is my favorite one </h3>
+								<p>Cute.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="p2.jpg" class="image fit thumb"><img src="p2.jpg" alt="" /></a>
+								<h3> Nice!</h3>
+								<p>Look how Cute!.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="p3.jpg" class="image fit thumb"><img src="p3.jpg" alt="" /></a>
+								<h3>Kittens rock!!</h3>
+								<p>awww I can eat this one up</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="p4.jpg" class="image fit thumb"><img src="p4.jpg" alt="" /></a>
+								<h3>Kittens </h3>
+								<p>wow!.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="p5.jpg" class="image fit thumb"><img src="p5.jpg" alt="" /></a>
+								<h3>Puss</h3>
+								<p>In honor of the second program</p>
+							</article>
+												</div>
+					
+					</section>
+
+
+        <section id="four">
+
+	<h2>Daniel Ocampo</h2>
+	<h2>Computer Science 220  </h2>
+	<h2>Dr. Robert Roos</h2>
+	<h2>Report</h2>
+
+
+
+
+
+				<!-- Three -->
+					<section id="three">
+						<h2>The End </h2>
+						<p>Well that is all folks! Thank You for paying attention to this, Goodbye CS220 class!.</p>
+									<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="6u 12u$(xsmall)">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button special">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button special small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button special">Special</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button big">Big</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button special fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button special fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button special icon fa-download">Icon</a></li>
+								<li><a href="#" class="button icon fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button special disabled">Special</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Category -</option>
+												<option value="1">Manufacturing</option>
+												<option value="1">Shipping</option>
+												<option value="1">Administration</option>
+												<option value="1">Human Resources</option>
+											</select>
+										</div>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="4u$ 12u(small)">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="6u 12u$(small)">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="6u$ 12u$(small)">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="12u$">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row 50% uniform">
+									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
