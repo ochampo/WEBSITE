@@ -1,0 +1,50 @@
+      <!--BOOTSTRAP 4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+        <!--CSS-->
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+
+<h1 class="text-center">Roy Benavidez </h1>
+<h3 class = "text-center">A legend, A <i>hero, A man</i>
+  <br>
+ 
+ <figure class="figure">
+  <img src="https://i.ytimg.com/vi/-TfnoTdJhCw/maxresdefault.jpg" class="figure-img img-fluid rounded" alt="roy with the a medal">
+  <figcaption class="figure-caption">what a cool guy </figcaption>
+</figure>
+  <section>
+  <div class = "row">  
+  	
+	<div class="col-sm-7">	
+    	<h2> Here's a time line of Roy benavidez life:</h2>
+    	<ul class = "center">
+    	<li><strong>1935</strong>- Roy was born on Aug 5</li>
+      	<li><strong>1954</strong>- Benavidez enlisted in the Texas Army National Guard</li>
+      	<li><strong>1965</strong>- He was sent to South Vietnam as an advisor to an Army of the Republic of Vietnam infantry regiment</li>
+      	<li><strong>1968</strong>- A 12-man Special Forces patrol, which included nine Montagnard tribesmen, was surrounded by an NVA 		infantry battalion of about 1,000 men. Benavidez heard the radio appeal for help and boarded a helicopter to respond. 			Armed only with a knife, he jumped from the helicopter carrying his medical bag and ran to help the trapped patrol</li>
+      	<li><strong>1968</strong>- while still recuperating from his wounds at Brooke Army Medical Center at Fort Sam Houston, Roy was 		visited by General William C. Westmoreland, then the Chief of Staff of the United States Army, who presented the Distinguished 	Service Cross to Benavidez</li>	    
+    	</ul>
+     </div>
+     <div class="col-sm-5">	
+    	
+    	
+    	<img src="https://www.google.com/search?q=roy+benavidez&client=ubuntu&hs=D4G&channel=fs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiU6biM7obcAhUJ34MKHYznDFwQ_AUICygC&biw=1193&bih=614#imgrc=xQEb5LgVkMP3MM:" class="figure-img img-fluid rounded" alt="roy with the a medal">
+    	
+    	
+     </div>  
+  
+  </div>
+    
+  </section>
+  
+  

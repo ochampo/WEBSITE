@@ -1,0 +1,16 @@
+
+drop table Anaheim;
+CREATE TABLE Anaheim (
+Status VARCHAR (20),
+businessID VARCHAR (20),
+Business_Name VARCHAR (50),
+Address_MapInfo VARCHAR (100),
+Description  VARCHAR (100)
+
+);
+
+
+
+.separator "\t"
+.import data.csv Anaheim
+
